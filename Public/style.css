@@ -1,0 +1,60 @@
+.main-container{
+  display: flex;
+  justify-content: center;
+}
+
+.left-container{
+  width: 50%;
+
+}
+.right-container{
+  width: 50%;
+}
+.display{
+  width: 90%;
+  padding: 30px;
+  border: 1px solid gray;
+  text-align: center;
+}
+#try-btn{
+  background-color: rgb(21, 169, 85);
+  margin-bottom: 25px;
+  
+}
+
+.winner-list-group{
+  width: 90%;
+  height: 80%;
+  list-style-type: none;
+  border: 1px solid rgb(200, 200, 200);
+  border-radius: 5px;
+  margin: 0;
+  padding: 20px;
+}
+.winner-list-item{
+  border: 1px solid rgb(200, 200, 200);;
+  padding: 11px 10px;
+  border-radius: 5px;
+}
+
+#input-name{
+  width: 90%;
+}
+h1{
+  text-align: center;
+}
+
+.student-list-group{
+  width: 90%;
+  list-style-type: none;
+  border: 1px solid rgb(200, 200, 200);
+  border-radius: 5px;
+  margin: 0;
+  padding: 20px;
+}
+
+.student-list-item{
+  border: 1px solid rgb(200, 200, 200);;
+  padding: 10px 5px;
+  border-radius: 5px;
+}

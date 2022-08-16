@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Raffle Draw Application</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="container">
+  <h1>My Raffle Draw Application</h1>
+  <div class="main-container">
+    <div class="left-container">
+      <P><label for="Enter All Name">Enter All Name</label></P>
+      <textarea name="Enter All Name" id="input-name" cols="40" rows="16"></textarea><br><br>
+      <button class="btn btn-primary" id="show-student">Show Student</button><br><br>
+      <div style="display: none;" id="student-list-container">
+        <ul class="student-list-group" id="student-list-group">
+          
+        </ul>
+      </div>
+      <script>
+        const showStudent = document.getElementById('show-student')
+
+        let x = document.getElementById('student-list-container')
+        showStudent.addEventListener('click', function () {
+          if (x.style.display == 'none') {
+            x.style.display = 'block'
+          } else {
+            x.style.display = 'none'
+          }
+        })
+      </script>
+    </div>
+    <div class="right-container">
+      <div class="display-container">
+        <p><label>Output Display</label></p>
+        <div class="display">
+          <h1 id="display">Display</h1>
+        </div><br>
+        <button class="btn btn-primary" id="try-btn">Give A Try</button>
+      </div>
+      <div class="winner-container">
+        <ul class="winner-list-group" id="winner-list">
+        <li class="winner-list-item"><strong>First Winner: <span  id="first-position"></span></strong></li>
+        <li class="winner-list-item"><strong>Second Winner: <span  id="second-position"></span></strong></li>
+        <li class="winner-list-item"><strong>Third Winner: <span  id="third-position"></span></strong></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
